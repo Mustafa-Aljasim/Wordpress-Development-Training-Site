@@ -1,16 +1,6 @@
-<?php
-
-/* 
-
-Template name: About us
-
-*/
-
-?>
-
 <?php get_header(); ?>
     <section>
-        <h2>About us page</h2>        
+        <h2>Blog Posts</h2>        
         <?php if (have_posts()): ?>
                 <?php while(have_posts()):?>
                     <?php the_post(); ?>
@@ -19,12 +9,15 @@ Template name: About us
                         <span>
                             Puplished on: <?php the_date(); ?>
                             By: <?php the_author_posts_link(); ?>
+                            In: <?php the_category(', '); ?>
+                            <?php the_tags('|',',','|'); ?>   
                          </span>
-                         <?php the_content(); ?>
-                    </article>
+                         <?php the_excerpt(); ?>
+                     </article>
                 <?php endwhile; ?>
         <?php else: ?>
                 <?php echo "There are no posts"; ?>
         <?php endif; ?>
     </section>
+    <?php get_sidebar(); ?>
     <?php get_footer(); ?>
