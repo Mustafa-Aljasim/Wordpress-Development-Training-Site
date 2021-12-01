@@ -1,3 +1,5 @@
 [19-Nov-2021 05:39:12 UTC] PHP Parse error:  syntax error, unexpected 'get_header' (T_STRING) in C:\xampp\htdocs\WordPress-Dev-Site\Wordpress-Development-Training-Site\wordpress\wp-content\themes\twentynineteen\index.php on line 17
 [23-Nov-2021 18:08:21 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
  in C:\xampp\htdocs\WordPress-Dev-Site\Wordpress-Development-Training-Site\wordpress\wp-includes\wp-db.php on line 1653
+[01-Dec-2021 05:29:23 UTC] PHP Notice:  Trying to get property 'queue' of non-object in C:\xampp\htdocs\WordPress-Dev-Site\Wordpress-Development-Training-Site\wordpress\wp-includes\script-loader.php on line 2678
+[01-Dec-2021 05:29:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\WordPress-Dev-Site\Wordpress-Development-Training-Site\wordpress\wp-includes\script-loader.php on line 2678
